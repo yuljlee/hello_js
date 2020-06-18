@@ -94,12 +94,26 @@ const students = [
     console.log(result / students.length);
 }
 
+// Q10. make a string containing all the scores
+// result should be: '45, 80, 90, 66, 88'
 {
-    let scores = [];
-    //let strScore = '';
-    students.forEach(function(item){
-        scores.push(item.score);
-    })
-    
-    console.log(scores.toString());
+    console.clear();
+    const result = students
+        .map((student) => student.score)
+        .join();
+
+    console.log(result);
+}
+
+// Bonus! do Q10 sorted in ascending order
+// result should be: '45, 66, 80, 88, 90'
+{
+    //console.clear();
+    const result = students
+        .map((student) => student.score)
+        .sort((a, b) => b - a)
+        .join();
+                           
+                           //[11,2,22,1].sort((a, b) => a - b)
+    console.log(result);
 }
