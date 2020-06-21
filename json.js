@@ -45,3 +45,5 @@ const obj = JSON.parse(json, (key, value) => {
 //console.log(obj);
 console.log(person.date.getDate());
 console.log(obj.date.getDate());
+
+// promise
