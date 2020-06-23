@@ -56,7 +56,7 @@ userStroage.loginUser(
         userStroage.getRoles(
             user,
             userWithRoll => {
-                alert(`Hello ${userWithRoll.name}, you have a ${userWithRoll.roll} roll`);
+                alert(`Hello ${userWithRoll.name}, you have a ${userWithRoll.role} roll`);
             },
             error => {
                 console.log(error);
