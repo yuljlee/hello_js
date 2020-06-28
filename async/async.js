@@ -19,3 +19,8 @@ async function fetchUser() {
 const user = fetchUser();
 user.then(console.log);
 //console.log(`user value: ${user} type: ${typeof user}`);
+
+// 2. await
+function delay(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
